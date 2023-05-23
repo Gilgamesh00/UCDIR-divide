@@ -29,7 +29,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.mixture import GaussianMixture
 
 import datetime
-# new change
 now = datetime.datetime.now()
 time_str = now.strftime("%Y-%m-%d %H:%M:%S")
 print("Time: ", time_str)
