@@ -33,7 +33,7 @@ now = datetime.datetime.now()
 time_str = now.strftime("%Y-%m-%d %H:%M:%S")
 print("Time: ", time_str)
 #os.environ['CUDA_LAUNCH_BLOCKING'] = '1' 
-
+# change
 model_names = sorted(name for name in models.__dict__
     if name.islower() and not name.startswith("__")
     and callable(models.__dict__[name]))
