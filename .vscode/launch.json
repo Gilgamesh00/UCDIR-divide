@@ -1,0 +1,67 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            /* "args": ["-a", "resnet50", 
+            "--batch-size", "32", 
+            "--mlp", "--aug-plus", "--cos", 
+            "--data-A", "/mnt/data2/liujiayang/domainnet/clipart", 
+            "--data-B", "/mnt/data2/liujiayang/domainnet/sketch", 
+            "--num_cluster", "7", 
+            "--warmup-epoch", "20", 
+            "--temperature", "0.2", 
+            "--exp-dir", "domainnet_clipart-sketch", 
+            "--lr", "0.0002", 
+            "--clean-model", "/mnt/data2/liujiayang/pre-trained/moco/moco_v2_800ep_pretrain.pth.tar", 
+            "--instcon-weight", "1.0", 
+            "--cwcon-startepoch", "20", 
+            "--cwcon-satureepoch", "100", 
+            "--cwcon-weightstart", "0.0",
+            "--cwcon-weightsature", "1.0",            
+            "--cwcon_filterthresh", "0.2",      
+            "--epochs", "200",      
+            "--selfentro-temp", "0.1",      
+            "--selfentro-weight", "0.5",      
+            "--selfentro-startepoch", "100",      
+            "--distofdist-weight", "0.1",      
+            "--distofdist-startepoch", "100",      
+            "--prec_nums", "50,100,200",] */
+            "args":[
+            "-a", "resnet50",
+            "--batch-size", "64",
+            "--mlp", "--aug-plus", "--cos",
+            "--data-A", "/mnt/data1/ljy/data/OfficeHome/Product",
+            "--data-B", "/mnt/data1/ljy/data/OfficeHome/Clipart",
+            "--num_cluster", "65",
+            // 20
+            "--warmup-epoch", "0",
+            "--temperature", "0.2",
+            "--exp-dir", "office-home_product-clipart",
+            "--lr", "0.0002",
+            "--clean-model", "/mnt/data1/ljy/pre-trained/moco/moco_v2_800ep_pretrain.pth.tar",
+            "--instcon-weight", "1.0",
+            // 20
+            "--cwcon-startepoch", "0",
+            "--cwcon-satureepoch", "100",
+            "--cwcon-weightstart", "0.0",
+            "--cwcon-weightsature", "0.5",
+            "--cwcon_filterthresh", "0.2",
+            "--epochs", "200",
+            "--selfentro-temp", "0.01",
+            "--selfentro-weight", "1.0",
+            "--selfentro-startepoch", "0",
+            "--distofdist-weight", "0.5",
+            "--distofdist-startepoch", "0",
+            "--prec_nums", "1,5,15",]
+        }
+    ]
+}
